@@ -70,7 +70,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    min-width: 95%;
+    /* min-width: 95%; */
     font-size: large;
 }
 .center header {
@@ -80,9 +80,6 @@ body {
 header {
     background-color: #FFCCCC;
     flex: 0 0 40px;
-    color: white;
-    
-    /* justify-content: center; */
     padding: 20px;
 }
 header nav {
@@ -101,6 +98,12 @@ header nav a {
 .center header nav a:hover {
     text-decoration: underline
 }
+
+.center header nav h1 {
+    color: black;
+    font-size: 50px
+}
+
 nav {
     background-color: #f0f0f0;
 }
@@ -150,8 +153,16 @@ figure.hero img {
 	/* -webkit-filter: blur(3px);
 	filter: blur(3px); */
     transform: scale(1.03);
+    position: absolute;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0; 
+
 }
-figure.hero figcaption{
+
+/* figure.hero figcaption{
     position: absolute;
     font-style: normal;
     padding: 0;
@@ -166,6 +177,7 @@ figure.hero figcaption{
     background-color: rgba(0,0,0,.6);
     padding: 20px 0;
 }
+
 figure.hero figcaption * {
     font-weight: bold;
     font-size: 1.4em;
@@ -173,7 +185,8 @@ figure.hero figcaption * {
     color: white;
     margin: 0;
     padding: 0;
-}
+} */
+
 #offcanvas-left ul,
 #offcanvas-right ul {
     padding: 0
@@ -313,7 +326,7 @@ table.styled thead, table.styled th {
     background-color: #dfdfdf;
 }
 table.styled thead, table.styled th {
-    text-align: center;
+    /* text-align: center; */
 }
 table.styled th, table.styled td {
     border: 1px solid lightgray;
@@ -325,6 +338,20 @@ footer table.styled th {
 }
 footer table.styled th, footer table.styled td {
     border: 0;
+}
+
+/* Businesses pic */
+table tbody td img {
+    width: 250px;
+    height: 250px;
+}
+
+/* Businesses Listing Tables */
+#listing {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 50px;
 }
 
 /* Footer   */
@@ -348,11 +375,6 @@ hr {
     border: 0;
 }
 /* General styling */
-
-
-img {
-    width: 100%;
-}
 
 .line-numbers a {
     text-decoration: none;
@@ -390,10 +412,4 @@ pre > code {
 	height: 100%;
 }
 
-/* Businesses Listing Table */
-#listing {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 50px;
-}
+
