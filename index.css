@@ -18,8 +18,8 @@ html,body {
 
 }
 h1,h2,h3,h4,h5,h6 {
-    margin-bottom: 0.2em;
-    padding-bottom: 0.2em;
+    margin-bottom: 0.01em;
+    padding-bottom: 0.01em;
     color: var(--first-color);
 }
 /* p {
@@ -99,9 +99,11 @@ header nav a {
     text-decoration: underline
 }
 
+@media screen and (max-width: 600px) {
 .center header nav h1 {
     color: black;
-    font-size: 50px
+    font-size: 15px
+    }
 }
 
 nav {
@@ -322,22 +324,16 @@ table.styled {
     width: 100%;
     border-collapse: collapse;
 }
+
 table.styled thead, table.styled th {
     background-color: #dfdfdf;
 }
 table.styled thead, table.styled th {
-    /* text-align: center; */
+    text-align: center;
 }
 table.styled th, table.styled td {
     border: 1px solid lightgray;
     padding: 5px;
-}
-footer table.styled th {
-    background: none;
-    text-align: left;
-}
-footer table.styled th, footer table.styled td {
-    border: 0;
 }
 
 /* Businesses pic */
@@ -360,6 +356,14 @@ footer img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+footer table.styled th {
+    background: none;
+    text-align: left;
+}
+footer table.styled th, footer table.styled td {
+    border: 0;
 }
 
 p mark {
