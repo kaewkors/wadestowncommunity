@@ -22,10 +22,6 @@ h1,h2,h3,h4,h5,h6 {
     padding-bottom: 0.01em;
     color: var(--first-color);
 }
-/* p {
-    margin-top: 5px;
-    margin-bottom: 10px;
-} */
 
 body {
     display: flex;
@@ -99,12 +95,10 @@ header nav a {
     text-decoration: underline
 }
 
-@media screen and (max-width: 600px) {
 .center header nav h1 {
     color: black;
-    font-size: 15px
+    font-size: 20px
     }
-}
 
 nav {
     background-color: #f0f0f0;
@@ -216,12 +210,12 @@ figure.hero figcaption * {
 
 
 footer {
-    /* display: grid; */
+    /* display: flex; */
     /* grid-template-columns: 10% 1fr 1fr 10%; */
     /* grid-column-gap: 20px; */
     background-color: var(--first-color);
     /* flex: 0 0 80px; */
-    /*flex-direction: row; */
+    /* flex-direction: row; */
     /* padding: 20px 0px; */
     /* min-height: 80px; */
 }
@@ -350,7 +344,7 @@ align-items: center;
 margin: 50px;
 }
 
-/* Footer   */
+/* Footer */
 
 footer img {
     width: 50px;
